@@ -1,0 +1,126 @@
+* {
+  /* font-family: "Noto Sans Mono", monospace; */
+  /* font-family: 'Share Tech Mono', monospace; */
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  /* unstyle */
+  all: unset;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(#000 0.5px, transparent 0.5px) 0 0 /3px 3px,
+    radial-gradient(#000 0.5px, transparent 0.5px) 1px 1px /3px 3px,
+    radial-gradient(#000 0.5px, transparent 0.5px) 2px 2px /3px 3px,
+    url("bg_color.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  font-family: "Share Tech Mono", monospace;
+  background-color: #f2e427;
+  border: 2px solid #f2e427;
+  width: 476px;
+  height: 615px;
+  border-radius: 6px;
+  box-shadow: 0 25px 121px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.counter--limit {
+  background-color: #f26027;
+}
+
+.counter__title {
+  opacity: 0.85;
+  text-transform: uppercase;
+  letter-spacing: 1;
+  width: 200px;
+  text-align: center;
+  line-height: 0.9;
+  font-weight: 400;
+  font-size: 32px;
+  margin-top: 60px;
+}
+
+.counter__value {
+  opacity: 0.85;
+  font-size: 200px;
+  margin-top: 10px;
+}
+
+.counter__reset-button {
+  cursor: pointer;
+}
+
+.counter__reset-icon {
+  opacity: 0.3;
+  font-size: 35px;
+  transition: all 0.4s;
+}
+
+.counter__reset-icon:hover {
+  opacity: 0.6;
+}
+
+.counter__buttons {
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 116px;
+  width: 100%;
+  margin-top: auto;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+  display: flex;
+}
+
+.counter__button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.counter__button:hover {
+  background-color: #000;
+}
+
+.counter__button--decrease {
+}
+
+.counter__button--increase {
+  border-left: 1px solid rgba(198, 242, 39, 0.6);
+}
+
+.counter__icon {
+  color: #f2e427;
+  opacity: 0.9;
+  font-size: 40px;
+}
+
+.counter__icon--minus {
+}
+
+.counter__icon--plus {
+}
+
+@media (max-width: 480px) {
+  .counter {
+    border-radius: 0;
+  }
+  .counter__buttons {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
